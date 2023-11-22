@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rock Paper Scissors Game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="container">
+  <h1>The Rock Paper Scissors Game</h1>
+</div>
+
+
+<nav>
+  <div><button class="btn" id="Rock"><img src="img/Rock.jpg" /></button>
+    <audio class="clickSound" src="audio/Rock.mp3" preload="auto"></audio>
+    <h2>ROCK</h2> </div>
+  <div><button class="btn" id="Paper"><img src="img/Paper.jpg" /></button>
+    <audio class="clickSound" src="audio/Paper.mp3" preload="auto"></audio>
+    <h2>PAPER</h2></div>
+  <div><button class="btn" id="Scissors"><img src="img/Scissors.jpg" /></button>
+    <audio class="clickSound" src="audio/Scissors.mp3" preload="auto"></audio>
+    <h2>SCISSORS</h2></div>
+</nav>
+  
+<div class="Result">
+  <p id= "You"></p>  
+  <p id= "Comp"></p>
+  <p id= "result"></p>  
+</div>
+
+  <section class="score">
+    <h2>Score Board</h2>
+    <nav>
+    <p>Player : <span id="player-score">0</span></p>
+    <p>Computer : <span id="computer-score">0</span></p>
+    </nav>  
+    <p>Ties: <span id="ties">0</span></p>
+  </section>
+  <section>
+   <center> <button class ="btn-s" id="reset">Reset</button></center>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
