@@ -102,6 +102,7 @@ for (let i = 0; i < choices.length; i++) {
 } 
 let reset = document.querySelector("#reset");
 reset.addEventListener("click", function() {
+    const resetSound = document.getElementById("resetSound");
     gameStats.wins = 0;
     gameStats.losses = 0;
     gameStats.ties = 0;
@@ -111,5 +112,6 @@ reset.addEventListener("click", function() {
     document.getElementById("You").innerHTML = "";
     document.getElementById("Comp").innerHTML = "";
     document.getElementById("result").innerHTML = "";
+    resetSound.play();
 
 });
